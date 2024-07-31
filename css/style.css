@@ -1,0 +1,131 @@
+/* global style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+.darkgray {
+  color: darkgray;
+}
+/* body style */
+body {
+  background-color: #202124;
+}
+/* ++++++++++++++++Header++++++++++++++++*/
+header{
+  border-bottom: 1px solid #303134;
+}
+/* navbar style */
+.navbar {
+  margin-top: 3vh;
+  display: grid;
+  grid-template-columns: auto 50% 30% 10%;
+}
+/* ================Logo================ */
+.navbar .logo {
+  place-self: center;
+}
+.navbar .logo img {
+  width: 6rem;
+  height: 2rem;
+}
+/* ================SearchBar================ */
+.searchBar {
+  background-color: #303134;
+  padding: 0.6vw 1rem;
+  border-radius: 3rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+.searchBar textarea {
+  background-color: transparent;
+  border: none;
+  resize: none;
+  font-size: large;
+  outline: none;
+}
+.searchBar .SBicons {
+  justify-self: end;
+}
+.searchBar .SBicons img,
+.searchBar .SBicons span {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* X icon  */
+.searchBar .SBicons .material-symbols-outlined {
+  color: darkgray;
+  cursor: pointer;
+}
+.searchBar .SBicons .or {
+  border-left: 1px solid gray;
+  padding-top: 8px;
+  cursor: pointer;
+}
+.searchBar .SBicons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+/* ================Settings================ */
+.settings {
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  align-items: center;
+  justify-content: space-evenly;
+}
+.settings img{
+  border-radius: 50%;
+  cursor: pointer;
+}
+.settings i{
+  cursor: pointer;
+}
+/* ================Menu================ */
+.menu {
+  margin-top: 2vh;
+}
+.menu .MElements .active {
+  border-bottom: inset;
+  padding-bottom: 1.6vh;
+  border-color: #8ab4f7;
+}
+.menu .MElements .active p {
+  color: #8ab4f7;
+}
+.menu li {
+  float: left;
+}
+.menu ul {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-around;
+  padding: 0.5vw 1rem 0;
+}
+.menu .MElements {
+  display: grid;
+  grid-template-columns: repeat(6,auto);
+  justify-content: space-between;
+  gap: 1vh;
+}
+.menu ul li a {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-decoration: none;
+}
+.menu ul li p {
+  display: inline;
+  text-align: center;
+}
+.menu ul li img,
+.menu ul li i {
+  vertical-align: middle;
+}
+.menu .tools {
+  justify-self: end;
+}
+
+
