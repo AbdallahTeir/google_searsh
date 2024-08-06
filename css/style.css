@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   color: white;
+  font-family: Arial, sans-serif;
 }
 
 .darkgray {
@@ -593,4 +594,53 @@ main .secondarea .feed {
   color: #9aa0a5;
   float: right;
   margin-right: 1rem;
+}
+/* ++++++++++++++++Footer++++++++++++++++ */
+footer{
+  background-color: #171717;
+}
+/* ================Location================ */
+
+footer .location{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: start;
+  align-items: center;
+  padding-top: 8px;
+  border-bottom: 2px solid #3c4043;
+}
+footer .location h4{
+  margin-left: 20vh;
+padding: 12px 0;
+padding-right: 1rem;
+border-right: 2px solid #3c4043;
+color: #9AA0A5;
+}
+footer .location span{
+  height: 12px;
+  width: 12px;
+color: #8ab4f7;
+background-color: #9AA0A5;
+border-radius: 50%;
+margin-right: 5px;
+margin-left: 1rem;
+}
+footer a:link {
+  color: #8ab4f7;
+  text-decoration: none;
+}
+/* ================Help================ */
+footer .help{
+  display: grid;
+  grid-template-columns: 10% auto;
+  margin-top: 10px;
+  padding-bottom: 1.5rem;
+}
+footer .help .terms{
+display: grid;
+grid-template-columns: auto auto auto auto;
+justify-content: start;
+}
+footer .help .terms p{
+margin-right: 2.5vw;
 }
