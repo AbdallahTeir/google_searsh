@@ -5,31 +5,38 @@
   box-sizing: border-box;
   color: white;
 }
+
 .darkgray {
   color: darkgray;
 }
+
 /* body style */
 body {
   background-color: #202124;
 }
+
 /* ++++++++++++++++Header++++++++++++++++*/
-header{
+header {
   border-bottom: 1px solid #303134;
 }
+
 /* navbar style */
 .navbar {
   margin-top: 3vh;
   display: grid;
   grid-template-columns: auto 50% 30% 10%;
 }
+
 /* ================Logo================ */
 .navbar .logo {
   place-self: center;
 }
+
 .navbar .logo img {
   width: 6rem;
   height: 2rem;
 }
+
 /* ================SearchBar================ */
 .searchBar {
   background-color: #303134;
@@ -39,6 +46,7 @@ header{
   grid-template-columns: 1fr auto;
   align-items: center;
 }
+
 .searchBar textarea {
   background-color: transparent;
   border: none;
@@ -46,58 +54,71 @@ header{
   font-size: large;
   outline: none;
 }
+
 .searchBar .SBicons {
   justify-self: end;
 }
+
 .searchBar .SBicons img,
 .searchBar .SBicons span {
   margin-left: 5px;
   margin-right: 5px;
 }
+
 /* X icon  */
 .searchBar .SBicons .material-symbols-outlined {
   color: darkgray;
   cursor: pointer;
 }
+
 .searchBar .SBicons .or {
   border-left: 1px solid gray;
   padding-top: 8px;
   cursor: pointer;
 }
+
 .searchBar .SBicons img {
   width: 24px;
   height: 24px;
   cursor: pointer;
 }
+
 /* ================Settings================ */
 .settings {
   display: grid;
-  grid-template-columns: repeat(3,auto);
+  grid-template-columns: repeat(3, auto);
   align-items: center;
   justify-content: space-evenly;
 }
-.settings img{
+
+.settings img {
   border-radius: 50%;
   cursor: pointer;
 }
-.settings i{
+
+.settings i {
   cursor: pointer;
 }
+
 /* ================Menu================ */
 .menu {
   margin-top: 2vh;
 }
+
 .menu .MElements .active {
   border-bottom: inset;
   padding-bottom: 1.6vh;
   border-color: #8ab4f7;
 }
+
 .menu .MElements .active p {
   color: #8ab4f7;
 }
+
 .menu li {
   float: left;
 }
+
 .menu ul {
   display: grid;
   list-style-type: none;
@@ -105,27 +126,471 @@ header{
   justify-content: space-around;
   padding: 0.5vw 1rem 0;
 }
+
 .menu .MElements {
   display: grid;
-  grid-template-columns: repeat(6,auto);
+  grid-template-columns: repeat(6, auto);
   justify-content: space-between;
   gap: 1vh;
 }
+
+/* .menu .MElements {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  justify-content: space-between;
+  gap: 1vh;
+} */
 .menu ul li a {
   display: grid;
   grid-template-columns: auto auto;
   text-decoration: none;
 }
+
 .menu ul li p {
   display: inline;
   text-align: center;
 }
+
 .menu ul li img,
 .menu ul li i {
   vertical-align: middle;
 }
+
 .menu .tools {
   justify-self: end;
 }
 
+/* ++++++++++++++++Main++++++++++++++++ */
+main {
+  display: grid;
+  grid-template-columns: 10% 50% 30% 10%;
+  grid-template-areas: ". firstarea secondarea .";
+  padding: 0 1.5vw 0;
+}
 
+main a:link {
+  color: #8ab4f7;
+  text-decoration: none;
+}
+
+main a:visited {
+  color: #c589f9;
+}
+/* ================First Area================ */
+.firstarea {
+  grid-area: firstarea;
+}
+
+/* ================First website================ */
+main .firstweb i {
+  margin-left: 1vw;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+main .firstweb h4 {
+  color: #9aa0a5;
+  margin-bottom: 3vh;
+  margin-top: 2vh;
+}
+
+main .firstweb .mainlink {
+  margin: 1vh 0;
+}
+
+main .firstweb h5,
+p {
+  color: #bdc1c5;
+}
+
+main .firstweb .FWlinks {
+  margin-left: 1vw;
+}
+
+main .firstweb .FWlinks .sublinks {
+  margin-top: 2vh;
+}
+
+/* ================Asks================ */
+main .asks h3 {
+  margin-top: 5vh;
+  border-bottom: 2px solid #3c4043;
+  padding-bottom: 1vh;
+}
+
+main .asks h3 i {
+  margin-left: 1vw;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+main .asks h4 {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  border-bottom: 2px solid #3c4043;
+  padding: 1vh 0;
+  color: #bdc1c5;
+}
+
+main .asks .feedback {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+main .asks .feedback h6 {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: end;
+  padding-left: 1vw;
+  color: #9aa0a5;
+}
+
+main .asks .feedback i {
+  padding-bottom: 1vh;
+}
+
+/* ================SecondWeb================ */
+main .secondweb {
+  margin-top: 5vh;
+}
+
+main .secondweb i {
+  margin-left: 1vw;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+main .secondweb .mainlink {
+  margin: 1vh 0;
+}
+
+main .secondweb h5,
+p {
+  color: #bdc1c5;
+}
+
+main .secondweb span {
+  color: #9aa0a5;
+}
+
+/* ================ThirdWeb================ */
+main .thirdweb {
+  margin-top: 5vh;
+}
+
+main .thirdweb i {
+  margin-left: 1vw;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+main .thirdweb .mainlink {
+  margin: 1vh 0;
+}
+
+main .thirdweb table {
+  margin-top: 1vh;
+}
+
+main .thirdweb h5,
+p {
+  color: #bdc1c5;
+}
+
+main .thirdweb td .gap {
+  padding-left: 1vw;
+}
+
+main .thirdweb span {
+  color: #9aa0a5;
+}
+
+/* ================FourthWeb================ */
+main .fourthweb {
+  margin-top: 5vh;
+}
+
+main .fourthweb i {
+  margin-left: 1vw;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+main .fourthweb .mainlink {
+  margin: 1vh 0;
+}
+
+main .fourthweb h5,
+p {
+  color: #bdc1c5;
+}
+
+main .fourthweb span {
+  color: #9aa0a5;
+}
+
+/* ================FifthWeb================ */
+main .fifthweb {
+  margin-top: 5vh;
+}
+
+main .fifthweb i {
+  margin-left: 1vw;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+main .fifthweb .mainlink {
+  margin: 1vh 0;
+}
+
+main .fifthweb h5,
+p {
+  color: #bdc1c5;
+}
+
+main .fifthweb span {
+  color: #9aa0a5;
+}
+
+/* ================SixthWeb================ */
+main .sixthweb {
+  margin-top: 5vh;
+}
+
+main .sixthweb i {
+  margin-left: 1vw;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+main .sixthweb h3 {
+  margin: 1vh 0;
+}
+
+main .sixthweb h5,
+p {
+  color: #bdc1c5;
+}
+
+main .sixthweb h5 {
+  margin-top: 1vh;
+}
+
+main .sixthweb span {
+  color: #9aa0a5;
+}
+
+main .sixthweb .sublinks {
+  margin-top: 5vh;
+  margin-left: 1vw;
+}
+
+/* ================SeventhWeb================ */
+main .seventhweb {
+  margin-top: 5vh;
+}
+
+main .seventhweb i {
+  margin-left: 1vw;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+main .seventhweb h3 {
+  margin: 1vh 0;
+}
+
+main .seventhweb h5,
+p {
+  color: #bdc1c5;
+}
+
+main .seventhweb h5 {
+  margin-top: 1vh;
+}
+
+main .seventhweb span {
+  color: #9aa0a5;
+}
+
+/* ================Related================ */
+main .related h3 {
+  margin-top: 5vh;
+  padding-bottom: 1vh;
+}
+
+main .related h3 i {
+  margin-left: 1vw;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+main .related .searches {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(4, auto);
+  justify-items: start;
+  column-gap: 1vw;
+  row-gap: 1vh;
+}
+
+main .related .searches .searchesitems {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2vw;
+  justify-self: stretch;
+  justify-content: start;
+  background-color: #303134;
+  border-radius: 50px;
+  padding: 2vh 2vw;
+}
+
+main .related .searches .searchesitems h4 {
+  color: #b4b8bc;
+}
+
+/* ================Google================ */
+main .google {
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+
+main .google .firstgoogle {
+  display: grid;
+  grid-template-columns: repeat(15, auto);
+  justify-content: center;
+}
+
+main .google .firstgoogle div {
+  display: grid;
+  justify-items: center;
+}
+
+main .google .firstgoogle div h3 {
+  font-size: 2rem;
+}
+
+main .google .firstgoogle div .active {
+  color: white;
+}
+
+main .google .firstgoogle .last {
+  margin-left: 1vw;
+  align-items: end;
+}
+main .google .firstgoogle .last i {
+  color: #8ab4f7;
+}
+/* ================Second Area================ */
+.secondarea {
+  grid-area: secondarea;
+  padding-left: 3vw;
+}
+main .secondarea .info {
+  border: 2px solid #3c4043;
+  border-radius: 10px;
+}
+/* ================Images================ */
+
+main .secondarea .info .images {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+main .secondarea .info .images img {
+  height: 100%;
+  width: 100%;
+  border: 2px solid transparent;
+}
+#imgborder1 {
+  border-top-left-radius: 10px;
+}
+#imgborder2 {
+  border-top-right-radius: 10px;
+}
+main .secondarea .info .images .smallimg {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+main .secondarea .info .images .smallimg .lastimg {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+main .secondarea .info .images .more {
+  padding: 1vh;
+  border-top-left-radius: 5px;
+  position: absolute;
+  place-self: end;
+  background: rgba(0, 0, 0, 0.6);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.5vw;
+}
+main .secondarea .info .images .more p,
+main .secondarea .info .images .more i {
+  color: white;
+}
+/* ================Title================ */
+main .secondarea .info .title {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 2px solid #3c4043;
+}
+main .secondarea .info .title i {
+  color: #9aa0a5;
+  margin-bottom: 1vh;
+}
+/* ================Content================ */
+main .secondarea .info .content {
+  padding: 1rem;
+}
+main .secondarea .info .content h4 {
+  margin-bottom: 1rem;
+  color: #bdc1c5;
+  font-weight: lighter;
+}
+main .secondarea .info .content .aTag {
+  margin-bottom: 1rem;
+}
+main .secondarea .info .content span {
+  font-weight: bold;
+  color: #bdc1c5;
+  margin-bottom: 5px;
+}
+/* ================Also================ */
+main .secondarea .info .also {
+  padding: 1rem;
+}
+main .secondarea .info .also .people {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+}
+main .secondarea .info .also .people h4 {
+  color: #9aa0a5;
+}
+main .secondarea .info .also .frame {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+main .secondarea .info .also .frame div {
+  display: grid;
+  grid-column: auto;
+}
+main .secondarea .info .also .frame img {
+  height: 12vh;
+  width: 100%;
+  border-radius: 10px;
+}
+main .secondarea .feed {
+  color: #9aa0a5;
+  float: right;
+  margin-right: 1rem;
+}
